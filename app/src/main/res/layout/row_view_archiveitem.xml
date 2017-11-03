@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imgarchive"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/txtInfo"
+        android:layout_toEndOf="@+id/imgarchive"
+        android:background="#C6C2C2" />
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgarchive"
+        android:text="NOVEMBER 1, 2017 | BRIAN BARRETTBRIAN BARRETT"
+        android:textAlignment="textStart"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NORTH KOREA'S PLENTY SCARY WITHOUT AN OVERHYPED EMP THREAT"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_below="@+id/view"
+        android:layout_toEndOf="@+id/imgarchive" />
+
+    <TextView
+        android:id="@+id/textDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="While an electromagnetic pulse attack could cause plenty of trouble, don't expect one to come from North Korea."
+        android:textColor="#3A3939"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textTitle"
+        android:layout_toEndOf="@+id/imgarchive" />
+
+
+</RelativeLayout>

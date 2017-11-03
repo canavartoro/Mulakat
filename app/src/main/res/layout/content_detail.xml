@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mulakat.huseyin.mulakat.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <RelativeLayout
+            android:id="@+id/detay_RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:minHeight="300dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="8dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textTitle"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_below="@+id/imageView2"
+                android:background="#C6C2C2" />
+
+            <TextView
+                android:id="@+id/textInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="TextView" />
+
+            <View
+                android:id="@+id/view01"
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_below="@+id/textInfo"
+                android:background="#C6C2C2" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textInfo"
+                android:text="NORTH KOREA'S PLENTY SCARY WITHOUT AN OVERHYPED EMP THREAT"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/view"
+                android:layout_toEndOf="@+id/imgarchive"
+                android:minHeight="300dip"
+                android:text="While an electromagnetic pulse attack could cause plenty of trouble, don't expect one to come from North Korea."
+                android:textColor="#3A3939"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="En çok geçen kalime"
+                android:textColor="#000000"
+                android:minHeight="120dip"
+                android:textSize="14sp"
+                android:layout_below="@+id/textDesc"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
