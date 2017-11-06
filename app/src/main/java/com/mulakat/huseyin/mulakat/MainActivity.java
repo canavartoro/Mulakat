@@ -132,6 +132,8 @@ public class MainActivity extends AppCompatActivity implements ontaskend {
 
     private  void getwiredData() {
 
+        statics.setCurrentActivity(this);
+
         if (utility.checkInternetConnection()) {
             internet_Layout.setVisibility(View.GONE);
 
@@ -159,6 +161,7 @@ public class MainActivity extends AppCompatActivity implements ontaskend {
     }
 
     public void reloadList() {
-        list_wired.invalidateViews();
+        if (list_wired != null)
+            list_wired.invalidateViews();
     }
 }

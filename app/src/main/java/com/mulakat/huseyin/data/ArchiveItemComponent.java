@@ -145,6 +145,7 @@ public class ArchiveItemComponent implements ontaskend {
                     }
                 }
             }
+            //quick sort kullanmak gerekiyor, sqlite ile de çözülebilir
             Set<Map.Entry<String, Integer>> entrySet = wordCountMap.entrySet();
             statics.getMainActivity().getDbHelper().deleteAllWords();
             for (Map.Entry<String, Integer> entry : entrySet) {
